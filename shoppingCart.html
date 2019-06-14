@@ -7,6 +7,12 @@
         
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        
+          <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
         function addElement(parentId, elementTag, elementId, html) {
@@ -32,21 +38,30 @@
         
         .totals-item{
             color: black;
+            font-size: 1em;
+        }
+        
+        .product-title{
+            padding-left: 20px;
+            font-size: 1.2em;
         }
  
 .product-details {
   float: left;
   width: 37%;
+    padding-left: 20px
 }
  
 .product-price {
   float: left;
   width: 12%;
+  font-size: 1em;
 }
  
 .product-quantity {
   float: left;
   width: 10%;
+  font-size: 1em;
 }
  
 .product-removal {
@@ -57,6 +72,7 @@
 .product-line-price {
   float: left;
   width: 12%;
+ font-size: 1em;
   text-align: right;
 }
  
@@ -82,7 +98,7 @@
 /* Apply clearfix in a few places */
 /* Apply dollar signs */
 .product .product-price:before, .product .product-line-price:before, .totals-value:before {
-  content: '$';
+  content: 'P';
 }
  
 /* Body/Header stuff */
@@ -133,6 +149,7 @@ label {
 .product .product-details .product-description {
   margin: 5px 20px 5px 0;
   line-height: 1.4em;
+    font-size: 0.8em;
 }
 .product .product-quantity input {
   width: 40px;
@@ -170,6 +187,7 @@ label {
 }
 .totals .totals-item-total {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+    
 }
  
 .checkout {
@@ -227,6 +245,8 @@ label {
  
   .product-quantity:before {
     content: 'x';
+      padding-left: 20px;
+      margin-right: 0px;
   }
  
   .product-removal {
@@ -252,7 +272,7 @@ label {
   }
  
   .product .product-line-price:before {
-    content: 'Item Total: $';
+    content: 'Item Total: P';
   }
  
   .totals .totals-item label {
@@ -327,10 +347,31 @@ label {
         
           <div class="product">
     <div class="product-image">
-      <img src="images/nike.jpg">
+      <img src="img/cornharvest.jpg" class="img-fluid" style = "width: 200;height: 150;">
     </div>
     <div class="product-details">
-      <div class="product-title">Nike Flex Form TR Women's Sneaker</div>
+      <div class="product-title">Indian Mango</div>
+      <p class="product-description"></p>
+    </div>
+    <div class="product-price">12.99</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">25.98</div>
+  </div>
+
+
+   <div class="product">
+    <div class="product-image">
+            <img src="img/mangoharvest.jpg" class="img-fluid" style="width: 200px; height: 130">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Sweet Corn</div>
       <p class="product-description"> It has a lightweight, breathable mesh upper with forefoot cables for a locked-down fit.</p>
     </div>
     <div class="product-price">12.99</div>
@@ -344,6 +385,27 @@ label {
     </div>
     <div class="product-line-price">25.98</div>
   </div>
+        
+  <div class="product">
+    <div class="product-image">
+     <img src="img/riceharvest.png" alt="" class="img-fluid" style="width: 200; height: 130">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Sinandomeng</div>
+      <p class="product-description"> It has a lightweight, breathable mesh upper with forefoot cables for a locked-down fit.</p>
+    </div>
+    <div class="product-price">12.99</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">25.98</div>
+  </div>
+        
             <div class="totals">
     <div class="totals-item">
       <label>Subtotal</label>
