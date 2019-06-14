@@ -1,60 +1,153 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Farmer's Market</title>
+    <meta charset="utf-8">
 
-    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+    
+    <style>  
         
-        <title>
-            Farmer's Market!
-        </title>
+   .navbar {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 10px;
+            font: 20px Segoe UI, sans-serif;
+            letter-spacing: 6px;
+          }
         
-        <link rel="stylesheet" type="text/css" href="style.css">
-              
-        
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        .navbar-nav  li a:hover {
+            color: #1abc9c !important;
+          }     
+        .btn-link,.btn-link:focus,.btn-linkvisited,.btn_link:hover,.btn-linkactive{
+            color:green !important;
+        }
+        .btn-success{
+            position:relative;
+            bottom: 0px;
+            left: 100px;
+        }
+        .btn-primary{
+            background: gray;
+            margin-left:5px;
+            margin-top: 3px;
+            font: Segoe UI, sans-serif;
+            line-height: 1.3;
+        } 
+        .panel-primary{
+            color:black; 
+            border: black;
+        }
+        .panel-primary>.panel-heading{
+            background-image: none;
+            background-color: green;
+            color: white;
+        }
+        .btn-group-toggle{
+            color:gray;
+            display: inline-flex;
+            margin-bottom: 10px;
+        }
+        .card-header{
+            border-color: gray;
+            border:3px;
+        }
+    </style>
+    
+    
+</head>
+    
+<body>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    </head>
-
-    <body>
-        
-        
-        <header class="header">
-            <nav class="navbar navbar-style">
-                <div class="container"> 
-                    <div class="navbar-header">
-                    
-                    <a href=""><img src="sprites/logo.png" class="logo"></a>
-                        
-                    </div>
-                    
-                    <ul class="nav navbar-nav navbar-right">
-                        
-                        <li><a href="">Our Farmers</a></li>
-                        <li><a href="">Orders</a></li>
-                        <li><a href="">Cart</a></li>
-                    
-                    </ul>
-                
-                </div>
-            
-            
-            </nav>
-        
-        
-        </header>
-        
-            <div class="media">
-                  <div class="media-left media-top">
-                   <a href=""><img src="sprites/farmerbill.png" class="media-object" style="width:60px"></a>
-                  </div>
-                  <div class="media-body">
-                      <a href=""><h4 class="media-heading">John Doe</h4></a>
-                    <p>Lorem ipsum...</p>
-                      </div>
+     <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <img src="sprites/logo.png" style="max-height: 60px;">
             </div>
-        
-    </body>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="farmers.html">OUR FARMERS&nbsp;|&nbsp;</a></li>
+                <li><a href="#">ORDERS&nbsp;|&nbsp;</a></li>
+                <li><a href="#">MY CART&nbsp;|</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+    <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  FILTERS
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                       <div class="btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-primary">
+                            <input type="checkbox" checked autocomplete="off"> Mango
+                          </label>
+                       </div>
+                       <div class="btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-primary">
+                            <input type="checkbox" checked autocomplete="off"> Corn
+                          </label>
+                       </div>
+                       <div class="btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-primary">
+                            <input type="checkbox" checked autocomplete="off"> Rice <br>
+                          </label>
+                       </div>
+                  <button type="button" class="btn btn-success">Apply</button>
+              </div>
+            </div>
+        </div>
+     </div>
+    <div class="container">    
+      <div class="row">
+        <a href="buyingPage.html"><div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Farmer Bill</div>
+            <div class="panel-body"><img src="sprites/farmerbill.png" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">Available stocks: <br> MANGO <br> CORN <br> RICE</div>
+          </div>
+        </div></a>
+       <a href="buyingPage.html"><div class="col-sm-4"> 
+          <div class="panel panel-primary">
+            <div class="panel-heading">Farmer Claire</div>
+            <div class="panel-body"><img src="sprites/farmerclaire.jpg" class="img-responsive" style="width:88%" alt="Image"></div>
+            <div class="panel-footer">Available stocks: <br> MANGO <br> CORN <br> RICE</div>
+          </div>
+           </div></a>
+        <a href="buyingPage.html"><div class="col-sm-4"> 
+          <div class="panel panel-primary">
+            <div class="panel-heading">Farmer Jack</div>
+            <div class="panel-body"><img src="sprites/farmerjack.png" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">Available stocks: <br> MANGO <br> CORN <br> RICE</div>
+          </div>
+        </div></a>
+      </div>
+    </div><br>  
 
+    <footer class="container-fluid text-center">
+      <p>Online Store Copyright</p>  
+      <form class="form-inline">Get deals:
+        <input type="email" class="form-control" size="50" placeholder="Email Address">
+        <button type="button" class="btn btn-danger">Sign Up</button><br><br>
+      </form>
+    </footer>
+
+    </body>
 </html>
