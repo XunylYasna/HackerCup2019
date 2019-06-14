@@ -4,6 +4,7 @@
         
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+        
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -11,22 +12,26 @@
       
       <style>
           body {
-            font: 20px Montserrat, sans-serif;
+            font: 20px Segoe UI, sans-serif;
             line-height: 1.8;
             color: #f5f6f7;
+            background-color:#7EBE6A;
           }
           p {font-size: 16px;}
-          .margin {margin-bottom: 45px;}
+          .margin {margin-bottom: 45px;}    
           .bg-1 { 
-            background-color: #1abc9c; /* Green */
-            color: #ffffff;
+            background-color: #F3F2FC; /* Gray */
+            color: #2B2B2B; /* Main Font */
+            margin-bottom: 2px;
+            margin-top: 2px;
+    
           }
           .bg-2 { 
             background-color: #474e5d; /* Dark Blue */
             color: #ffffff;
           }
           .bg-3 { 
-            background-color: #ffffff; /* White */
+            background-color: #F3F2FC; /* Gray */
             color: #555555;
           }
           .bg-4 { 
@@ -38,16 +43,16 @@
             padding-bottom: 70px;
           }
           .navbar {
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             border: 0;
             border-radius: 0;
             margin-bottom: 0;
-            font-size: 12px;
-            letter-spacing: 5px;
+            font-size: 20px;
+            letter-spacing: 6px;
           }
           .navbar-nav  li a:hover {
-            color: #1abc9c !important;
+            color: #7EBE6A !important;
           }
       </style>
     </head>
@@ -63,25 +68,103 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
               </button>
-              <a class="navbar-brand" href="#">Me</a>
+              <img src="sprites/logo.png" style="max-height: 60px;">
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">WHO</a></li>
-                <li><a href="#">WHAT</a></li>
-                <li><a href="#">WHERE</a></li>
+                <li><a href="#">OUR FARMERS&nbsp;|&nbsp;</a></li>
+                <li><a href="#">ORDERS&nbsp;|&nbsp;</a></li>
+                <li><a href="#">MY CART&nbsp;|</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
         <!-- First Container -->
-        <div class="container-fluid bg-1 text-center">
-          <h3 class="margin">Who Am I?</h3>
-          <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-          <h3>I'm an adventurer</h3>
+        <div class="bg-1" style="padding-left: 100px; padding-top: 30px; display:flex; flex-direction: row;">
+          <img src="sprites/farmerjack.png" class="img-responsive img-circle margin" style="display:inline; border:2px solid;" width="180" height="180">
+            <h3 style="padding-left: 30px;">
+                Farmer John
+                <p style="font: 16px Segoe UI, sans-serif; line-height: 1.8; padding-top: 4px; margin-right: 50px;">
+                    Banaue, Ifugao<br>
+                    Contact Number: 09992831023<br>
+                    Meetup Schedules:
+                    <ul style="font: 16px Segoe UI, sans-serif; line-height: 1.8;">
+                        <li>Rice Terraces Base, MWF (7:00AM - 10:00AM)</li>
+                        <li>Rice Terraces Base, TH (12:30PM - 2:00PM)</li>
+                    </ul>
+                </p>
+            </h3>
         </div>
 
+        <!-- Third Container (Grid) -->
+        <div class="container-fluid bg-3 text-center">    
+          <h3 style="margin-bottom: 20px; margin-top: 2px;">Available Products</h3><br>
+          <div class="row text-center" style="display:flex;">
+          
+            <div class="card" style="width: 18rem; border: 3px solid; margin-left:300px;">
+              <img class="card-img-top" src="sprites/mango-in-flat-style-mango-logo-mango-icon-vector-17231298.png" style="height:130px;">
+              <div class="card-body">
+                <p class="card-text">
+                  <ul class="text-left">
+                      <li>Indian Mango</li>
+                      <li>50 Kilos</li>
+                      <li>PHP30 / Kilo</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            
+            <div class="card" style="width: 18rem; border: 3px solid; margin-left:100px;">
+              <img class="card-img-top" src="sprites/corn.png" style="height:130px;">
+              <div class="card-body">
+                <p class="card-text">
+                  <ul class="text-left">
+                      <li>Sweet Corn</li>
+                      <li>45 Kilos</li>
+                      <li>PHP 75/kilo</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+    
+            <div class="card" style="width: 18rem; border: 3px solid; margin-left:100px;">
+              <img class="card-img-top" src="sprites/rice.png" style="height:130px;">
+              <div class="card-body">
+                <p class="card-text">
+                  <ul class="text-left">
+                      <li>Sinandomeng</li>
+                      <li>120 Kilos</li>
+                      <li>PHP 30/kilo</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+    
+    
+<!--
+                <div class="col-sm-4">
+                  <p>Indian Mango</p>
+                  <p>30 Kilos</p>
+                  <p>PHP 50/kilo</p><br>
+                  <img src="sprites/mango-in-flat-style-mango-logo-mango-icon-vector-17231298.png" class="img-responsive margin" style="height:200px; margin-left: 50px;">
+                </div>
+                <div class="col-sm-4"> 
+                  <p>Sweet Corn</p>
+                  <p>45 Kilos</p>
+                  <p>PHP 75/kilo</p><br>
+                  <img src="sprites/corn.png" class="img-responsive margin" style="height:250px; margin-left: 80px;">
+                </div>
+                <div class="col-sm-4"> 
+                  <p>Sinandomeng</p>
+                  <p>120 Kilos</p>
+                  <p>PHP 30/kilo</p><br>
+                  <img src="sprites/rice.png" class="img-responsive margin" style="height:200px; margin-left: 100px;">
+                </div>
+-->
+          </div>
+        </div>
+    
         <!-- Second Container -->
         <div class="container-fluid bg-2 text-center">
           <h3 class="margin">What Am I?</h3>
@@ -91,29 +174,6 @@
           </a>
         </div>
 
-        <!-- Third Container (Grid) -->
-        <div class="container-fluid bg-3 text-center">    
-          <h3 class="margin">Where To Find Me?</h3><br>
-          <div class="row">
-            <div class="col-sm-4">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-4"> 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-4"> 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-            </div>
-          </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="container-fluid bg-4 text-center">
-          <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
-        </footer>
 
     </body>
 </html>
