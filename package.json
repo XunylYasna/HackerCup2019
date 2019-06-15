@@ -1,0 +1,26 @@
+{
+  "name": "hackercup2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nreceive_sms.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XunylYasna/HackerCup2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XunylYasna/HackerCup2019/issues"
+  },
+  "homepage": "https://github.com/XunylYasna/HackerCup2019#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "nexmo": "^2.4.1",
+    "socket.io": "^2.2.0"
+  }
+}
